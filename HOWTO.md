@@ -218,6 +218,18 @@ Let's Encrypt cert. An example crontab for your server can be found in the "cron
 per https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands
 
 
+
+Mac Troubleshooting
+---------------------
+* npm install fails: node-gyp fails on Py3.x, set Python to 2.7.x like
+`npm config set python </path/to/python27/python>`
+`npm install`
+
+* If your username has space, npm node-gyp fails
+setup a HOME alias dir under /Users pointing to your "lastname fullname" home dir
+set HOME as: `export HOME=/Users/<shortname>`
+Then run `npm install`
+
 Some Notes On The Architecture
 ------------------------------
 
